@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Event Listener Example</title>
+  </head>
+  <body>
+    <button onclick="changeText()">Be ready</button>
+    <p id="second">Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn’t very fuzzy, was he?</p>
+
+    <script>
+      function changeText() {
+        var third = document.getElementById('second');
+        third.textContent = "The button was clicked!";
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Background Color Example</title>
+  </head>
+  <body>
+    <button id="first">stroke once</button>
+    <button id="second">Toggle background color</button>
+    <p id="third">Peter Piper picked a peck of pickled peppers</p>
+
+    <script>
+      //get references 
+      const a = document.getElementById('first');
+      const b = document.getElementById('second');
+      const c = document.getElementById('third');
+
+      // Add a click event listener to button1
+      a.addEventListener('click', function() {
+        c.textContent = 'Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn’t very fuzzy, was he?';
+      });
+
+      //event listener 
+        b.addEventListener('click', function() {
+        //get a reference
+        const body = document.body;
+
+        //toggle the background color
+        if (body.style.backgroundColor === 'white') {
+          body.style.backgroundColor = 'lightgray';
+        } else {
+          body.style.backgroundColor = 'white';
+        }
+      });
+      
+    </script>
+  </body>
+</html>

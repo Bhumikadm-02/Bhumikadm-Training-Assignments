@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .selected {
+              background-color: yellow;
+            }
+        </style>
+    </head>
+<body>
+
+<ul id="first">
+  <li>Planets</li>
+  <li>Galaxy</li>
+  <li>Multiverse</li>
+</ul>
+
+<!--<button id="btn">Hey there!!</button>-->
+
+<script>
+
+// Get the list element
+const list = document.getElementById('first');
+      const items = list.getElementsByTagName('li');
+      for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener('click', function() {
+          //remove the "selected" class from all items
+          for (let j = 0; j < items.length; j++) {
+            items[j].classList.remove('selected');
+          }
+
+          //add the "selected" class to the clicked item
+          this.classList.add('selected');
+        });
+      }
+
+</script>
+</body>
+</html>

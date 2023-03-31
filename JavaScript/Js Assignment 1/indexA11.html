@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JavaScript Program</title>
+  </head>
+  <body>
+    <h3>Assignment 1</h3>
+    <script>
+	let i;
+	function isPrime(num) {
+  		if (num<2) {
+    			return false;
+  		}
+  	for (i=2;i<num;i++) {
+    		if (num%i===0) {
+      		return false;
+    		}
+  	}
+  		return true;
+	}
+
+	alert(isPrime(7)); // is true
+	console.log(isPrime(15)); // is false
+
+
+
+    </script>
+  </body>
+</html>

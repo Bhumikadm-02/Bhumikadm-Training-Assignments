@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="first">
+  <li>Planets</li>
+  <li>Galaxy</li>
+</ul>
+
+<button id="btn">Hey there!!</button>
+
+<script>
+
+var button = document.getElementById("btn");
+
+// Create a new list item element
+var newItem = document.createElement("li");
+newItem.textContent = "Multiverse";
+
+// Get the list element
+var list = document.getElementById("first");
+
+// Append the new item to the list
+list.appendChild(newItem);
+</script>
+
+</body>
+</html>

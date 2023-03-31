@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JavaScript Program</title>
+  </head>
+  <body>
+    <h3>Assignment 3</h3>
+    <script>
+
+      function reverseWords(str) {
+        const words = str.split(" ");
+        const reversedWords = words.reverse();
+        const reversedStr = reversedWords.join(" ");
+        return reversedStr;
+      }
+
+      const sentence = "How much wood would a woodchuck chuck if a woodchuck could chuck wood?";
+      console.log(reverseWords(sentence));
+
+    </script>
+  </body>
+</html>

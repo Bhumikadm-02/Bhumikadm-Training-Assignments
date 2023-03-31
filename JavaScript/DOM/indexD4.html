@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Event Listener Example</title>
+  </head>
+  <body>
+    <button id="first">stroke once</button>
+    <button id="second">stroke again</button>
+
+    <script>
+      //get a reference
+      const button1 = document.getElementById('first');
+      const button2 = document.getElementById('second');
+
+      //event listener to the button
+      button1.addEventListener('click', function() {
+        alert('Peter Piper picked a peck of pickled peppers');
+      });
+
+      button2.addEventListener('click', function() {
+        alert('Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn’t very fuzzy, was he?')
+      });
+    </script>
+  </body>
+</html>

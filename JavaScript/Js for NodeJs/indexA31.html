@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JavaScript Program</title>
+  </head>
+  <body>
+    <h3>Assignment 3</h3>
+    <script>
+
+        const array1 = [11, 12, 13, 14, 15];
+        const array2 = [13, 14, 15, 16, 17];
+        const result = intersection(array1, array2);
+        alert("Intersection: "+result); //results [13, 14, 15]
+
+        function intersection(arr1, arr2) {
+            let result = [];
+                for (let i = 0; i < arr1.length; i++) {
+                    if (arr2.includes(arr1[i]) && !result.includes(arr1[i])) {
+                        result.push(arr1[i]);
+                    }
+                 }
+                return result;
+        }
+
+    </script>
+  </body>
+</html>

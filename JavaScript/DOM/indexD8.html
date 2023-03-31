@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Event Listener Example</title>
+  </head>
+  <body>
+    <button id="first">stroke once</button>
+    <button id="second">stroke again</button>
+    <p id="third"></p>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="name" id="name" name="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <button id="btn">submit</button>
+    </form>
+
+    <script>
+      //get a reference
+      //const button1 = document.getElementById('first');
+      const button2 = document.getElementById('second');
+      const third1 = document.getElementById('third');
+      const btn1 = document.getElementById('btn'); //get a reference from submit button
+
+      button2.addEventListener('click', function() {
+        third.textContent = 'Fuzzy Wuzzy was a bear. Fuzzy Wuzzy had no hair. Fuzzy Wuzzy wasn’t very fuzzy, was he?'
+      });
+
+      //event listener to the button
+      btn1.addEventListener('click', function() {
+        alert("Submitted successfully!")
+      });
+    </script>
+  </body>
+</html>

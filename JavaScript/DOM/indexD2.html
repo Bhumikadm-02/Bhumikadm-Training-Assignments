@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button Event Listener Example</title>
+  </head>
+  <body>
+    <button id="first">Click here</button>
+
+    <script>
+      //get a reference
+      const button = document.getElementById('first');
+
+      //event listener to the button
+      button.addEventListener('click', function() {
+        alert('Peter Piper picked a peck of pickled peppers');
+      });
+    </script>
+  </body>
+</html>

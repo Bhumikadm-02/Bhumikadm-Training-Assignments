@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JavaScript Program</title>
+  </head>
+  <body>
+    <h3>Assignment 3</h3>
+    <script>
+
+        function sumArray(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (typeof arr[i] === 'number') {
+                    sum += arr[i];
+                }
+            }
+            return sum;
+        }
+
+        const numbers = [11, 22, 33, 44, 55, 66, 77, 88, 99];
+        alert("The sum is: "+sumArray(numbers)); // Output: 495
+
+
+    </script>
+  </body>
+</html>
