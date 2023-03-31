@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="top">
+		  <h1>Web Page Including Form</h1>
+		</div>
+	  </header>
+
+<form class="personal">
+	<h3>Personal Information</h3>
+
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" required><br><br>
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email" required><br><br>
+	<label for="phone">Phone:</label>
+	<input type="tel" id="phone" name="phone"><br><br>
+	<label for="dob">Date of Birth:</label>
+	<input type="date" id="dob" name="dob"><br><br>
+	<label for="gender">Gender:</label>
+	<input type="radio" id="male" name="gender" value="male">
+	<label for="male">Male</label>
+	<input type="radio" id="female" name="gender" value="female">
+	<label for="female">Female</label><br><br>
+		
+	<h3>Areas of Interest</h3>
+	
+	<input type="radio" id="interest1" name="interest1" value="interest1">Arts
+	<input type="radio" id="interest2" name="interest2" value="interest2">Commerce
+	<input type="radio" id="interest3" name="interest3" value="interest3">Science<br><br>
+
+	<label for="message">Message:</label><br>
+	<textarea id="message" name="message"></textarea><br><br>
+	<button type="clear">Clear</button>
+    <button type="submit">Send</button>
+	</form>
+
+</body>
+</html>

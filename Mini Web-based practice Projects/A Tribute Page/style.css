@@ -1,0 +1,28 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #3f5c64;
+}
+
+h1 {
+      text-align: center;
+      background-color: #050505;
+      color: #fff;
+      justify-content: space-between;
+      padding: 16px;
+    }
+
+img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+p {
+      text-align: justify;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.5;
+      font-size: 1.1rem;
+    } 
+   

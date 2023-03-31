@@ -1,0 +1,6 @@
+Below that showcase your work
+adding multiple images. Mention the contact detail of the photographer at
+the bottom (footer). Add a button to view your work. This button will directly
+bring you down to the images section. You need to take care of the margin,
+padding, color combination, font-size, font-style, image size and styling of a
+button.
