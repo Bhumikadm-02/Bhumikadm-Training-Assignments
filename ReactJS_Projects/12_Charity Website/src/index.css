@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #a3cded;
+}
+
+/* Header */
+header {
+  background-color: #0f4869;
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*nav {
+  background-color: #ffa200;
+}*/
+
+nav ul {
+  list-style: none;
+  color: #fff;
+  /*padding: 20px;*/
+
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+nav li {
+  /*margin-right: 20px;*/
+  float: right;
+  padding-right: 32px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.img {
+  align-content: center;
+  margin-left: 17%;
+}
+
+div h1 {
+  text-align: center;
+}
+
+.list {
+  background-color: #a3cded;
+}
+
+/* Slideshow container */
+.slider {
+  width: 500px;
+  height: 300px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 1500px;
+  background-color: pink;
+  height: 300px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -500px;
+}
+#slide-3:target ~ .image-container {
+  left: -1000px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: lightgreen;
+}
+
+.slide-charity {
+  background-color: bisque;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #69c8ff;
+  color: #000;
+  padding: 10px 15px;
+  margin-top: 2%;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: none;
+  border-color: #245673;
+}
+
+.btn:hover {
+  background-color: #469dcf;
+}
+
+.footer {
+  background-color: #0f4869;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}

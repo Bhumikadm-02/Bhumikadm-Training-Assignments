@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-image: url('https://timehackhero.com/wp-content/uploads/2020/01/to-do-list.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    
+}
+
+.todo {
+  box-sizing: border-box;
+  width: 400px;
+  margin-left: 35%;
+  margin-top: 5%;
+  padding: 20px;
+  border: 2px solid #0beaab;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.logo img {
+  border-radius: 50%;
+  margin-top: 3%;
+}
+
+.logo h1 {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+input {
+  margin-right: 5%;
+  margin-top: 10%;
+  padding: 8px;
+}
+
+li {
+  color: #ffffff;
+  text-align: left;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  background-color: #4de7e5;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 18%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+
+  /* styles for hover effect */
+  position: relative;
+  overflow: hidden;
+}
+
+.del {
+  margin-bottom: 10%;
+  margin-top: 8%;
+}
