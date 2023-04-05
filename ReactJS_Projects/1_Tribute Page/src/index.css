@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: antiquewhite;
+  background-image: url('https://i.pinimg.com/originals/2f/bd/5e/2fbd5e58992f5f09102a7b5d242e3560.gif');
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.tribute {
+  text-align: center;
+  justify-content: center;
+  background-repeat: repeat-x;
+}
+
+.tribute h1 {
+  color: #e22b9f;
+}
+
+header p {
+  color: #ffff;
+  font-weight: 500;
+  font-size: large;
+}
+
+.head img {
+  border-radius: 100%;
+}
+.about {  
+  color: #ffff;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.about h2 {
+  color: #e22b9f;
+}
+
+.about p {
+  color: #ffff;
+  padding-right: 16px;
+}
+
+.career {
+  background-repeat: no-repeat;
+  padding-bottom: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.career p {
+  color: #ffff;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.career h2 {
+  text-align: center;
+  color: #e22b9f;
+}
+
+.award {
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.award p {
+  color: #ffff;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.award h2 {
+  color: #e22b9f;
+}
+
+.foo {
+  color: #ffff;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: large;
+}
