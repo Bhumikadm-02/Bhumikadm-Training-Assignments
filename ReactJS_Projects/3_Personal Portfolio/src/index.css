@@ -1,0 +1,78 @@
+/* General styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60edaf8a294ce7dfa0b9a39b_21-inspiring-graphic-design-portfolios_B.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* header element */
+header {
+  background-color: #171c3a;
+  fill-opacity: 0.5;
+  color: #fff;
+  margin-top: 3%;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav links */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+img {
+  border-radius: 50%;
+}
+
+/* sections */
+div {
+  padding: 0 20px 0 20px;
+  margin: 20px;
+}
+
+p {
+  color: #fff;
+  font-weight: bolder;
+}
+
+li {
+  color: #fff;
+  font-weight: bolder;
+}
+
+div h2 {
+  color: #051750;
+}
+
+/* footer element */
+.foo {
+  text-align: center;
+  padding: 20px;
+  background-color: #171c3a;
+  fill-opacity: 0.5;
+  color: #fff;
+}
