@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<form>
+        <h1>Login Page</h1>
+		<label>Username:</label>
+		<input type="text" name="username" id="username" onkeyup="validateForm()" />
+		<label>Password:</label>
+		<input type="password" name="password" id="password" onkeyup="validateForm()" />
+		<!--<input type="submit" value="Login" id="login-button" disabled="true" class="login" />-->
+        <button type="button" id="loginButton" disabled onclick="login()">Login</button>
+		<div class="error-message" id="error-message"></div>
+        <br>
+        <a href="example.html" onclick="forgotPsswd()">Forgot Password?</a>
+	</form>
+</body>
+</html>
