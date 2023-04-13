@@ -1,4 +1,4 @@
-# Bhumikadm-Training-Assignments
+# bhumikadm-training-assignments
 Technical training assignments.
 Java
 HTML, CSS and JavaScript
