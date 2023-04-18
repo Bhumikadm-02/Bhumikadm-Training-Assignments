@@ -1,0 +1,69 @@
+Restaurant 
+
+1.     db.demoRest.find()
+
+2.     db.demoRest.find({},{restaurant_id:1, name:1, borough:1,cuisine:1})
+
+3.     db.demoRest.find({},{restaurant_id:1, name:1, borough:1,cuisine:1,_id:0})
+
+4.     db.demoRest.find({},{_id:0,restaurant_id:1, name:1, borough:1,"address.zipcode":1})
+
+5.     db.demoRest.find({borough: "Bronx"}) or db.restaurant.find({borough: {$regex: /bronx/i}})
+
+6.     db.demoRest.find({borough: "Bronx"}).limit(5)
+
+7.     db.demoRest.find({borough: "Bronx"}).skip(5).limit(5)
+
+8.     db.demoRest.find({"grades.score": {$gt: 90}})
+ 
+9.     db.demoRest.find({"grades.score": {$gt: 80, $lt: 100}})
+
+10.    db.demoRest.find({"address.coord.0": {$lt: -95.754168}})
+
+11.    db.demoRest.find({$and : [{"cuisine" : {$ne : "American "}}, {"address.coord.0" : {$lt : -65.754168}}, {"grades.score" : {$gt : 70}}]})
+
+12.    db.demoRest.find({$and : [{"cuisine" : {$ne : "American "}}, {"address.coord.1" : {$lt : -65.754168}}, {"grades.score" : {$gt : 70}}]})
+
+13.    db.demoRest.find({$and : [{"cuisine" : {$ne : "American "}}, {"grades.grade" : "A"}, {"borough" : {$ne : "Brooklyn "}}]}).sort({cuisine : -1})
+
+14.    db.demoRest.find({"name" : { $regex: /^Wil.*/}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+
+15.    db.demoRest.find({"name" : { $regex: /.*ces$/}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+
+16.    db.demoRest.find({"name" : { $regex: /Reg/}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+
+17.    db.demoRest.find({borough: "Bronx", cuisine: {$in: ["American ","Chinese"]}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+
+18.    db.demoRest.find({$or: [{"borough": "Staten Island"}, {"borough": "Bronxor Brooklyn"}, {"borough": "Queens"}]}, {_id:0, restaurant_id:1, name:1,   		 borough:1, cuisine:1})
+
+19.    db.demoRest.find( {borough: {$nin: ["Staten Island","Queens","Bronx","Brooklyn"]}} , {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+
+20.    db.demoRest.find({"grades.score": {$lte: 10}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+
+21.    db.demoRest.find({$nor: [{cuisine: {$in: ["American ","Chinese"]}},{name: /^Wil.*/}]},{_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+
+22.    db.demoRest.find({"grades" : {$elemMatch: {"date": ISODate("2014-08-11T00:00:00Z"), "grade":"A", "score":11}}}, {_id:0, restaurant_id:1, name:1, 	 	 	 grades:1})
+
+23.    db.demoRest.find({$and: [{"grades.1.grade":"A"}, {"grades.1.score": 9}, {"grades.1.date": ISODate("2014-08-11T00:00:00Z")}]},{_id:0, restaurant_id:1, 	 	 name:1, grades:1}).pretty()
+
+24.    db.demoRest.find({$and : [{"address.coord.1": {$gt : 42}},{"address.coord.1": {$lte : 52}}]}, {_id:0, restaurant_id:1, name:1, address:1})
+
+25.    db.demoRest.find({},{_id:0, name:1}).sort( {name: 1})
+
+26.    db.demoRest.find({},{_id:0, name:1}).sort( {name: -1})
+
+27.    db.demoRest.find({}, {_id:0, cuisine:1, borough:1}).sort({cuisine: 1, borough: -1})
+
+28.    With Street: 
+	 db.demoRest.find({"address.street": {$regex: /Street/}}).pretty()
+
+       Not with street:
+       db.demoRest.find({"address.street": {$ne: {$regex: /Street/}}}).pretty()
+
+29.    db.demoRest.find({"address.coord": {$type: "double"}}, {_id:0, address:1})
+
+30.    db.demoRest.find({"grades": {$elemMatch: {"score": {$mod: [7,0]}}}},{_id:0, restaurant_id:1, name:1, grades:1})
+
+31.    db.demoRest.find({name: {$regex: /mon/}},{_id:0, name:1, borough:1, "address.coord":1, cuisine:1})
+
+32.    db.demoRest.find({name: {$regex: /^Mad.*/}},{_id:0, name:1, borough:1, "address.coord":1, cuisine:1})
