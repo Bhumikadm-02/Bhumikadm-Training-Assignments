@@ -7,6 +7,7 @@ JS assignments and projects --
 React Js --
 Node Js --
 Python projects --
+MongoDB --
 Springboot --
 Java JDBC --
 Java-MySql --
