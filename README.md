@@ -5,6 +5,7 @@ Java --
 HTML, CSS and JavaScript --
 JS assignments and projects --
 React Js --
+Web Based Projects --
 Node Js --
 Python projects --
 MongoDB --
